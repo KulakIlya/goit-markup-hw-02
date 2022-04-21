@@ -74,7 +74,8 @@ body{
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    background-color:#2196F3;;
+    background-color:#2196F3;
+    cursor: pointer;
 }
 
 .filter-button{

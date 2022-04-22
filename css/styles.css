@@ -1,47 +1,59 @@
+:root{
+    --main-font-family : "Roboto", sans-serif;
+    --secondary-font-family: "Raleway", sans-serif;
+    --main-color:#212121;
+    --secondary-color: #2196F3;
+    --main-dark-background-color: #ffffff;
+    --main-background-color: #ffffff;
+    --secondary-background-color: #F5F4FA;
+    --main-font-size: 14px;
+}
+
 body{
-    font-family: "Roboto", sans-serif;
-    color: #212121;
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+    background: var(--main-background-color);
+    font-size: var(--main-font-size);
 }
 
 /* The same styles */
 .link{
     text-decoration: none;
-    color: black;
 }
-.contacts, .advantages-items,
-.site-nav li, .examples li,
-.workers, .footer-contacts
-{
+
+.list{
     list-style-type: none;
 }
 
 /* Header */
 
 .logo{
-    font-family: "Raleway", sans-serif;
+    font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color: black;
+    color: var(--main-color);
 }
 
 .accent {
-    font-size: 26px;
-    color: #2196F3;
+    color: var(--secondary-color);
+}
+
+.site-nav{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--main-color);
+}
+
+.site-nav:hover, .site-nav:focus{
+    color: var(--secondary-color)
 }
 
 .current {
-    color: #2196F3;
+    color: var(--secondary-color);
     text-decoration: none;
 }
-
-.site-nav li{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
 
 .nav-contacts{
     color: #757575;
@@ -63,7 +75,7 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color:#ffffff;
+    color:var(--main-dark-background-color);
 }
 
 button{
@@ -78,7 +90,8 @@ button{
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    background-color:#2196F3;
+    background-color:var(--secondary-color);
+    color: var(--main-dark-background-color); 
 }
 
 .filter-button{
@@ -87,36 +100,34 @@ button{
     line-height: 1.62; 
     letter-spacing: 0.03em;
     text-align: center;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .advantages-items h3{
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--main-color);
 }
 
 .advantages-items p{
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
-.examples h2, .team h2{
+.section-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--main-color);
 }
 
 .team{
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background-color);
 }
 
 .workers h3{
@@ -124,7 +135,7 @@ button{
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
-    color: #212121
+    color: var(--main-color);
 }
 .workers p{
     font-size: 16px;
@@ -155,19 +166,25 @@ button{
 }
 
 .footer .logo{
-    color: #ffffff;
+    color: var(--main-dark-background-color);
 }
 
-.address {
-    font-size: 14px;
+.address{
+    font-style: normal;
+}
+
+.street {
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--main-dark-background-color);
 }
 
-.mail, .phone{
-    font-size: 14px;
+.footer-links{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-links:hover, .footer-links:focus{
+    color: var(--secondary-color);
 }

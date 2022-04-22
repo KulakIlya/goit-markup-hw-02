@@ -94,13 +94,25 @@ button{
     color: var(--main-dark-background-color); 
 }
 
-.filter-button{
+.filter-buttons{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62; 
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--main-color);
+}
+.current-filter{
+    background-color: var(--secondary-color);
+    color: var(--main-dark-background-color);
+}
+
+.filter-buttons:hover, .filter-buttons:focus{
+    color: var(--secondary-color);
+}
+
+.current-filter:hover, .current-filter:focus{
+    color: var(--main-dark-background-color);
 }
 
 .advantages-items h3{

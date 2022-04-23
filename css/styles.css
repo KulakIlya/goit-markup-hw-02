@@ -121,6 +121,7 @@ button{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-color);
+    font-size: 14px;
 }
 
 .advantages-items p{
